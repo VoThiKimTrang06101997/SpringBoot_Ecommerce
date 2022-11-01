@@ -10,5 +10,6 @@
 	<modules>
 		<module>ecommerce_library</module>
 		<module>ecommerce_admin</module>
+		<module>ecommerce_customer</module>
 	</modules>
 </project>

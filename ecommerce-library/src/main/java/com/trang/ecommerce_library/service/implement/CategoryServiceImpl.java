@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.trang.ecommerce_library.dto.CategoryDto;
 import com.trang.ecommerce_library.model.Category;
 import com.trang.ecommerce_library.repository.CategoryRepository;
 import com.trang.ecommerce_library.service.CategoryService;
@@ -64,6 +65,12 @@ public class CategoryServiceImpl implements CategoryService{
 	@Override
 	public List<Category> findAllByActivated() {
 		return categoryRepository.findAllByActivated();
+	}
+	
+	/* Customer */
+	@Override
+	public List<CategoryDto> getCategoryAndProduct() {
+		return categoryRepository.getCategoryAndProduct();
 	}
 
 
